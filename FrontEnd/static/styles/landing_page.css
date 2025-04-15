@@ -7,31 +7,115 @@
 
 body {
   background-color: #f6e088;
+  overflow-x: hidden;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 
+/*SEÇÃO 1: início*/
 .inicio h1 {
   font-size: 5vw;
   font-family: "Special Gothic Expanded One";
   letter-spacing: 0.5vw;
   color: #453b59;
+
+  position: relative;
+  left: 3vh;
+}
+
+.box-texto {
+  position: absolute;
+  left: 8vh;
+  top: 35vw;
+
+  max-width: 38vw;
+  min-width: 38vw;
+  height: auto;
+  padding: 20px;
+
+  border-left: solid 3px #453b59;
+
+  background-color: rgba(119, 92, 160, 0.107);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.texto-chamativo {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #5a4d75;
+  font-size: 3vh;
+  text-align: left;
 }
 
 .banner-chamativo {
   background-color: #ff914db5;
 
   border-radius: 30%;
-  height: 80vh;
-  width: 80vw;
+
+  min-width: 60vh;
+  max-width: 60vw;
+  height: auto;
+
+  position: relative;
+  left: 55vw;
+
+  box-shadow: -7px 10px 4px rgba(199, 144, 144, 0.2);
+
+  border: solid 2px #cd5e1949;
+
+  margin-bottom: 22vh;
 }
 
 .banner-chamativo p {
   font-family: "Poppins";
   font-weight: 600;
-  font-size: 4vw;
-  color: #f8721f;
-
+  font-size: 5vw;
   text-align: right;
   position: relative;
   right: 18vw;
-  top: 18vh;
+  top: 17vh;
+
+  background: linear-gradient(to right, #f8721f, #cd5e19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-chamativo img {
+  max-width: 50vw;
+  height: auto;
+
+  border-radius: 1.5dvh;
+
+  position: relative;
+  left: -5vw;
+  top: 20vh;
+}
+
+.botoes {
+  width: 100vw;
+
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-inicio {
+  background-color: #ff914d65;
+
+  min-width: 35vw;
+  max-width: 35vw;
+  height: auto;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  font-size: 2.5vw;
+  font-family: "Poppins";
+  color: #ad531c;
+
+  border: none;
+  border-radius: 1vw;
+  box-shadow: inset 20px 20px 20px rgba(199, 144, 144, 0.2);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
 }
